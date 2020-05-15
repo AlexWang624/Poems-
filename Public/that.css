@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata:700');
+
+body{
+  background-color:blue;
+  background-image: url("background2.jpeg");
+   background-position: center; /* Center the image */
+}
+.text-center{
+  font-family: 'Inconsolata', monospace;
+  font-size:35px;
+  color:blue;
+}
+
+.searchartist{
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 66px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: 'Inconsolata', monospace;
+   width: 20%;
+    margin: auto;
+}
+
+.random input[type=button]{
+  background-color: black;
+  border: none;
+  color:white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: 'Inconsolata', monospace;
+   width: 20%;
+    margin: auto;
+}
+
+.randomly{
+  font-family: 'Inconsolata', monospace;
+  font-size:50px;
+    color:blue;
+}
+
+.good{
+  font-family: 'Inconsolata', monospace;
+  font-size:35px;
+    color:blue;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: black;
+}
+
+.topnav a {
+  float: right;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+    font-family: 'Inconsolata', monospace;
+}
+
+.topnav a:hover {
+  background-color: pink;
+  color: black;
+}
+
+.topnav a.active {
+  background-color:blue;
+  color: white;
+}

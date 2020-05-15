@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata:700');
+
+body{
+  background-color:pink;
+  background-image: url("home.jpeg");
+   background-position: center; /* Center the image */
+}
+.title{
+  font-size: 100px;
+  font-family: 'Inconsolata', monospace;
+text-align: center;
+}
+
+.searchartist{
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 66px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: 'Inconsolata', monospace;
+   width: 20%;
+    margin: auto;
+}
+.searchartist:hover{
+  background-color: blue;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 66px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: 'Inconsolata', monospace;
+   width: 20%;
+    margin: auto;
+}
+.wow{
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 66px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: 'Inconsolata', monospace;
+   width: 20%;
+    margin: auto;
+}
+.wow:hover{
+  background-color: pink;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 66px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: 'Inconsolata', monospace;
+   width: 20%;
+    margin: auto;
+}
+
+.hey{
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 66px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: 'Inconsolata', monospace;
+   width: 20%;
+    margin: auto;
+}
+.hey:hover{
+  background-color: pink;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 66px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: 'Inconsolata', monospace;
+   width: 20%;
+    margin: auto;
+}

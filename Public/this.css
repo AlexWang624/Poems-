@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata:700');
+
+body{
+  background-color:pink;
+  background-image: url("background.jpeg");
+   background-position: center; /* Center the image */
+}
+
+.hey{
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: 'Inconsolata', monospace;
+}
+
+
+.heyy{
+  font-family: 'Inconsolata', monospace;
+font-size:35px;
+color:pink
+}
+.search input[type=text]{
+  font-family: 'Inconsolata', monospace;
+    font-size:80px;
+    color:pink;
+}
+/* .search{
+  width: 20%;
+  margin: auto;
+} */
+.hello{
+    font-family: 'Inconsolata', monospace;
+    font-size:35px;
+      color:pink;
+  }
+  .whatsup{
+      font-family: 'Inconsolata', monospace;
+      font-size:50px;
+        color:pink;
+    }
+.searchartist{
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 66px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: 'Inconsolata', monospace;
+   width: 20%;
+    margin: auto;
+}
+.text-center{
+  font-family: 'Inconsolata', monospace;
+  font-size:35px;
+  color:pink;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: black;
+}
+
+.topnav a {
+  float: right;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+    font-family: 'Inconsolata', monospace;
+}
+
+.topnav a:hover {
+  background-color: blue;
+  color: black;
+}
+
+.topnav a.active {
+  background-color:pink;
+  color: white;
+}

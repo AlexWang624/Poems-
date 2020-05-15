@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>Random Poem</title>
+        <link rel="stylesheet" type="text/css" href="that.css"/>
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('#btn').click(function(){
+                  $.ajax({
+                        url: "https://www.poemist.com/api/v1/randompoems",
+                        dataType:'json',
+
+                        success: function(data){
+                            console.log("success: ",data);
+                            let title = data[0].title;
+                            let poem = data[0].content;
+                            let poemhtml = poem.split("\n").join("<br/>");
+
+                            console.log(data[0]);
+                            // poem = poems.split("\n").join(" <br/> ")
+                            // console.log("poem: ", poem)
+                            document.getElementById("title").innerHTML = title;
+                            document.getElementById("poem").innerHTML = poemhtml;
+														//jQuery
+														// $("#poem").html(data[0]);
+                        },
+                        error: function(){
+                          alert("Hey! Something went wrong!")
+                        }
+                    });
+                })
+            })
+        </script>
+    </head>
+    <body>
+            <div class="topnav">
+      <a class="active" href="http://174.138.47.114/home">Home</a>
+          <a href="http://174.138.47.114/about">About</a>
+          <a href="http://174.138.47.114/randompoem">Random Poem</a>
+          <a href="http://174.138.47.114/poems">Search</a>
+        <div class="text-center">Poems!</div>
+    </div>
+  <br>
+    <div class="random">
+        <input type="button" value="Give me a random poem" id="btn">
+</div>
+<br>
+<br>
+<br>
+<div class="randomly" id="title"></div>
+<br>
+        <div class="good" id="poem"></div>
+        <br>
+        <br>
+    </body>
+</html>

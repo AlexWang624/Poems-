@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <title>Search</title>
+         <link rel="stylesheet" type="text/css" href="this.css"/>
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('#btn').click(function(){
+                  $.ajax({
+                        url: "http://poetrydb.org/author",
+                        dataType:'json',
+
+                        success: function(data){
+                            console.log("success: ",data);
+                            let poet = data.authors[Math.floor(Math.random() * data.authors.length)];
+                            // poem = poems.split("\n").join(" <br/> ")
+                            // console.log("poem: ", poem)
+                            document.getElementById("poet").innerHTML = poet;
+														//jQuery
+														// $("#poet").html(data.authors);
+                        },
+                        error: function(){
+                          alert("Hey! Something went wrong!")
+                        }
+                    });
+                })
+
+                $('#btt').click(function(){
+                  let authorName = $('#authorName').val();
+
+                  $.ajax({
+                        url: "http://poetrydb.org/author/"+ authorName,
+                        dataType:'json',
+
+                        success: function(data){
+                            console.log("success: ",data);
+                            let title = data[0].title;
+                            let poem = data[0].lines;
+                            // let a = poem.toString();
+                            // console.log("poem: ", poem)
+                            let poems = poem.join("<br>");
+                              document.getElementById("title").innerHTML = title
+                            document.getElementById("poem").innerHTML = poems
+
+                        },
+                        error: function(){
+                          alert("Hey! Enter a name!");
+                        }
+                    });
+                })
+            })
+        </script>
+    </head>
+    <body>
+      <div class="topnav">
+          <a class="active" href="http://174.138.47.114/home">Home</a>
+        <a href="http://174.138.47.114/about">About</a>
+    <a href="http://174.138.47.114/randompoem">Random Poem</a>
+    <a href="http://174.138.47.114/poems">Search</a>
+      <div class="text-center">Poems!</div>
+  </div>
+
+   <div class="container">
+            <br>
+<button class="hey" id="btn">
+Don't know what name to search? Click here for a name of a poet
+</button>
+
+               <div class="heyy" id="poet"></div>
+
+<br>
+<br>
+<br>
+  <div class="search">
+    <input type="text"  name="authorName"  id="authorName" placeholder="Give me his/her poem" required>
+<button class="searchartist" id="btt">
+  Go
+</button>
+                  <!-- <input type="button" value="Search" id="btt"> -->
+                  </div>
+
+                  <br>
+                  <br>
+                  <br>
+                    <div class="whatsup" id= "title"></div>
+                    <br>
+    <div class="hello" id= "poem"></div>
+    <br>
+    <br>
+
+
+</div>
+
+  </body>
+
+</html>
